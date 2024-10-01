@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERFLIGHT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header text-center">
+                <h1>SUPERFLIGHT!</h1>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-4 destino-container">
+                
+                <label for="destino">Destino:</label>
+                <select id="destino" class="form-control">
+                    <option value="" selected>Ciudades...</option>
+                    <option value="medellin" data-precio="100000">Medellín</option>
+                    <option value="cali" data-precio="90000">Cali</option>
+                    <option value="barranquilla" data-precio="150000">Barranquilla</option>
+                    <option value="bogota" data-precio="120000">Bogotá</option>
+                    <option value="cartagena" data-precio="180000">Cartagena</option>
+                </select>
+                <br><br>
+                <img src="/images/mapa.jpg" height="600" width="300" alt="Mapa" class="img-fluid">
+            </div>
+            <div class="col-md-4 pasajeros-container">
+                <label for="cantidad-pasajeros">Cantidad de Pasajeros:</label>
+                <input type="number" id="cantidad-pasajeros" class="form-control">
+                <label for="peso-maletas">Peso de las Maletas (kg):</label>
+                <input type="number" id="peso-maletas" class="form-control">
+                <label for="tipo-silla">Tipo de Silla:</label>
+                <select id="tipo-silla" class="form-control">
+                    <option value="normal" data-adicional="0">Normal</option>
+                    <option value="ejecutiva" data-adicional="20000">Ejecutiva</option>
+                    <option value="vip" data-adicional="40000">VIP (Incluye copa de Whisky)</option>
+                </select>
+                <button id="calcular" class="btn btn-primary mt-3">Liquidar Tiquete</button>
+                <p id="valor-tiquete" class="mt-3"></p>
+            </div>
+            <div class="col-md-4 suerte-container text-center">
+                <h2>Prueba tu suerte</h2>
+                <img src="/images/ruleta.jpg" alt="Ruleta" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-3">
+        Todos los derechos reservados
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

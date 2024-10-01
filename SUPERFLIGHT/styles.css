@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #00BFFF; /* Color monocromático para el header */
+    padding: 20px;
+    color: white;
+}
+
+.content {
+    height: 100vh;
+}
+
+.destino-container {
+    background-color: #87CEFA; /* Fondo monocromático azul claro */
+    padding: 20px;
+}
+
+.pasajeros-container {
+    background-color: #4682B4; /* Otro tono monocromático azul */
+    padding: 20px;
+    color: white;
+}
+
+.suerte-container {
+    background-color: #B0C4DE; /* Fondo monocromático gris azulado */
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+}
